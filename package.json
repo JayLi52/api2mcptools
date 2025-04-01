@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "apis to mcp tools",
   "private": false,
-  "author": "terry",
+  "author": "JayLi52",
   "type": "module",
   "bin": {
     "mcp-tools": "./build/index.js"
@@ -31,7 +31,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/terryliyongjie/mcp-tools.git"
+    "url": "git+https://github.com/JayLi52/api2mcptools.git"
   },
   "keywords": [
     "apis to mcp tools",
@@ -41,7 +41,7 @@
     "json apis to mcp tools"
   ],
   "bugs": {
-    "url": "https://github.com/terryliyongjie/mcp-tools/issues"
+    "url": "https://github.com/JayLi52/api2mcptools/issues"
   },
-  "homepage": "https://github.com/terryliyongjie/mcp-tools#readme"
+  "homepage": "https://github.com/JayLi52/api2mcptools#readme"
 }
