@@ -30,7 +30,7 @@ CONFIG_JSON_PATH=example.json
 ```
 
 Example configuration file (`example.json`):
-```json
+```js
 // Single tool configuration
 {
     "name": "tool_name",

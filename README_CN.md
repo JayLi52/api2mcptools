@@ -30,7 +30,7 @@ CONFIG_JSON_PATH=example.json
 ```
 
 配置文件示例 (`example.json`):
-```json
+```js
 // 单个工具配置
 {
     "name": "tool_name",
