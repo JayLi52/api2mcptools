@@ -1,22 +1,23 @@
 {
   "name": "@terryliyongjie/api2mcptools",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "apis to mcp tools",
   "private": false,
   "author": "JayLi52",
   "type": "module",
   "bin": {
-    "mcp-tools": "./build/index.js"
+    "mcp-tools": "./build/index.js",
+    "setup": "./build/setup-claude-server.js"
   },
   "files": [
     "build"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && shx cp setup-claude-server.js build/ && shx chmod +x build/*.js",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
-    "start": "node dist/index.js",
+    "start": "node build/index.js",
     "dev": "tsx src/index.ts"
   },
   "dependencies": {
@@ -26,7 +27,8 @@
   "devDependencies": {
     "@types/node": "^20.17.28",
     "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "shx": "^0.3.4"
   },
   "license": "MIT",
   "repository": {
