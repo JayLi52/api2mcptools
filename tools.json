@@ -1,0 +1,36 @@
+{
+    "name": "baidu_place_search",
+    "description": "使用百度地图API进行地点检索服务",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "检索关键字"
+            },
+            "tag": {
+                "type": "string",
+                "description": "检索分类偏好，与query组合进行检索，多个分类以逗号分隔"
+            },
+            "region": {
+                "type": "string",
+                "description": "检索行政区划区域，如北京、上海"
+            },
+            "output": {
+                "type": "string",
+                "description": "输出格式",
+                "enum": ["json", "xml"],
+                "default": "json"
+            }
+        },
+        "required": ["query", "region"]
+    },
+    "axiosConfig": {
+        "url": "https://api.map.baidu.com/place/v2/search",
+        "method": "get",
+        "params": {
+            "ak": "qAc9C5uRlh668h7T8foUh0PPao9M9yN3",
+            "output": "json"
+        }
+    }
+}

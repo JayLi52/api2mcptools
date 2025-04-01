@@ -1,8 +1,9 @@
 {
-  "name": "terminal-mcp-server",
-  "version": "0.1.0",
-  "description": "操作X主机",
-  "private": true,
+  "name": "mcp-tools",
+  "version": "1.0.0",
+  "description": "自定义接口JSON文件",
+  "private": false,
+  "author": "terry",
   "type": "module",
   "bin": {
     "terminal-mcp-server": "./build/index.js"
@@ -11,19 +12,20 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "build": "tsc",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
-    "start": "node build/index.js"
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.0",
-    "ssh2": "^1.16.0"
+    "axios": "^1.8.4"
   },
   "devDependencies": {
-    "@types/node": "^20.11.24",
-    "@types/ssh2": "^1.15.4",
-    "typescript": "^5.3.3"
+    "@types/node": "^20.17.28",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   }
 }
