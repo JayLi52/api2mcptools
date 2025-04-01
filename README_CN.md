@@ -1,4 +1,4 @@
-# @terryliyongjie/mcp-tools [中文]
+# @terryliyongjie/api2mcptools [中文]
 
 [English](./README.md)
 
