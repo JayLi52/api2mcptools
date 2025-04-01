@@ -1,12 +1,12 @@
 {
-  "name": "mcp-tools",
+  "name": "@terryliyongjie/mcp-tools",
   "version": "1.0.0",
-  "description": "自定义接口JSON文件",
+  "description": "apis to mcp tools",
   "private": false,
   "author": "terry",
   "type": "module",
   "bin": {
-    "terminal-mcp-server": "./build/index.js"
+    "mcp-tools": "./build/index.js"
   },
   "files": [
     "build"
@@ -27,5 +27,21 @@
     "@types/node": "^20.17.28",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terryliyongjie/mcp-tools.git"
+  },
+  "keywords": [
+    "apis to mcp tools",
+    "mcp",
+    "tools",
+    "apis",
+    "json apis to mcp tools"
+  ],
+  "bugs": {
+    "url": "https://github.com/terryliyongjie/mcp-tools/issues"
+  },
+  "homepage": "https://github.com/terryliyongjie/mcp-tools#readme"
 }
