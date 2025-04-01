@@ -2,6 +2,8 @@
 
 [中文文档](./README_CN.md)
 
+[![smithery badge](https://smithery.ai/badge/@JayLi52/api2mcptools)](https://smithery.ai/server/@JayLi52/api2mcptools)
+
 A Node.js package that converts APIs to MCP (Model Context Protocol) tools.
 
 ## Installation
