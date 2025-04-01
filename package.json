@@ -38,7 +38,8 @@
     "mcp",
     "tools",
     "apis",
-    "json apis to mcp tools"
+    "json apis to mcp tools",
+    "api mcp tools"
   ],
   "bugs": {
     "url": "https://github.com/JayLi52/api2mcptools/issues"
