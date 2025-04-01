@@ -8,7 +8,8 @@
 
 ### 方式一：使用 npx 快速开始（推荐）
 ```bash
-npx -y @smithery/cli@latest install @terryliyongjie/mcp-tools --client cursor --key YOUR_KEY
+set CONFIG_JSON_PATH=example.json
+npx @terryliyongjie/api2mcptools
 ```
 
 ### 方式二：传统安装方式

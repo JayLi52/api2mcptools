@@ -8,7 +8,8 @@ A Node.js package that converts APIs to MCP (Model Context Protocol) tools.
 
 ### Option 1: Quick Start with npx (Recommended)
 ```bash
-npx -y @smithery/cli@latest install @terryliyongjie/mcp-tools --client cursor --key YOUR_KEY
+set CONFIG_JSON_PATH=example.json
+npx @terryliyongjie/api2mcptools
 ```
 
 ### Option 2: Traditional Installation
