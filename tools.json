@@ -29,7 +29,7 @@
         "url": "https://api.map.baidu.com/place/v2/search",
         "method": "get",
         "params": {
-            "ak": "qAc9C5uRlh668h7T8foUh0PPao9M9yN3",
+            "ak": "rkHCNYzh78IwiXfZxYmaoNhLdh8bFSLs",
             "output": "json"
         }
     }

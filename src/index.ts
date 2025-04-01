@@ -35,7 +35,7 @@ export const log = {
 const toolManager = new ToolManager();
 
 // 创建服务器
-function createServer() {
+export function createServer() {
   const server = new Server(
     {
       name: "remote-ops-server",

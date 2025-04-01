@@ -18,17 +18,20 @@
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
     "start": "node build/index.js",
-    "dev": "tsx src/index.ts"
+    "dev": "CONFIG_JSON_PATH=./tools.json tsx src/index.ts",
+    "sse": "CONFIG_JSON_PATH=./tools.json tsx src/sse-server.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.0",
-    "axios": "^1.8.4"
+    "@types/express": "^5.0.1",
+    "axios": "^1.8.4",
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.17.28",
+    "shx": "^0.3.4",
     "tsx": "^4.19.3",
-    "typescript": "^5.8.2",
-    "shx": "^0.3.4"
+    "typescript": "^5.8.2"
   },
   "license": "MIT",
   "repository": {
