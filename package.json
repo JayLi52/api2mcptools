@@ -1,6 +1,6 @@
 {
-  "name": "@terryliyongjie/mcp-tools",
-  "version": "1.0.2",
+  "name": "@terryliyongjie/api2mcptools",
+  "version": "1.0.3",
   "description": "apis to mcp tools",
   "private": false,
   "author": "JayLi52",
