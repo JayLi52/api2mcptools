@@ -20,6 +20,71 @@ npm install @terryliyongjie/mcp-tools
 npm install -g @terryliyongjie/mcp-tools
 ```
 
+## 配置
+
+### 环境变量
+
+```bash
+# 必需：配置文件的路径
+CONFIG_JSON_PATH=example.json
+```
+
+配置文件示例 (`example.json`):
+```json
+// 单个工具配置
+{
+    "name": "tool_name",
+    "description": "工具描述",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "param1": {
+                "type": "string",
+                "description": "参数描述"
+            }
+        },
+        "required": ["param1"]
+    },
+    "axiosConfig": {
+        "url": "https://api.example.com/endpoint",
+        "method": "get",
+        "params": {
+            "key": "your_api_key"
+        }
+    }
+}
+
+// 或多个工具配置
+[
+    {
+        "name": "baidu_place_search",
+        "description": "使用百度地图API进行地点检索服务",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "检索关键字"
+                },
+                "region": {
+                    "type": "string",
+                    "description": "检索行政区划区域"
+                }
+            },
+            "required": ["query", "region"]
+        },
+        "axiosConfig": {
+            "url": "https://api.map.baidu.com/place/v2/search",
+            "method": "get",
+            "params": {
+                "ak": "your_baidu_map_key"
+            }
+        }
+    },
+    // 更多工具...
+]
+```
+
 ## 特性
 
 - 将 JSON API 转换为 MCP 工具
