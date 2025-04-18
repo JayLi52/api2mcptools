@@ -6,6 +6,7 @@
 
 一个将 API 转换为 MCP (Model Context Protocol) 工具的 Node.js 包。
 
+- CherryStudio Example [CherryStudio](https://cherry-ai.com/)
 ![CherryStudio Example Configuration](./example.jpg)
 
 ## 安装
