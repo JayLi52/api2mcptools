@@ -13,7 +13,7 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc && shx cp setup-claude-server.js build/ && shx chmod +x build/*.js",
+    "build": "tsc",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
