@@ -6,6 +6,8 @@
 
 A Node.js package that converts APIs to MCP (Model Context Protocol) tools.
 
+![CherryStudio Example Configuration](./example.jpg)
+
 ## Installation
 
 ### Option 1: Quick Start with npx (Recommended)
