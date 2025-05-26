@@ -3,6 +3,7 @@
 [中文文档](./README_CN.md)
 
 [![smithery badge](https://smithery.ai/badge/@JayLi52/api2mcptools)](https://smithery.ai/server/@JayLi52/api2mcptools)
+[![Model Context Protocol](https://img.shields.io/badge/Model%20Context%20Protocol-purple)](https://modelcontextprotocol.org)
 
 A Node.js package that converts APIs to MCP (Model Context Protocol) tools.
 
